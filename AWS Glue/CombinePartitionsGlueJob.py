@@ -1,3 +1,4 @@
+#This script combines partitions from multiple tables in the Glue catalog and writes the combined data to S3 in Parquet format.
 import sys
 from awsglue.context import GlueContext
 from awsglue.dynamicframe import DynamicFrame

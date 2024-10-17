@@ -1,3 +1,4 @@
+#This joins the tables from the Glue catalog and writes the combined data to S3 in Parquet format.
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
