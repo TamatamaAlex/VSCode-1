@@ -7,7 +7,7 @@ SELECT
     total_incl_tax, 
     partition_0
 FROM 
-    "fulldataauroratos3"."ota_order_totals"
+    "auroratos3exporttest"."ota_order_totals"
 
 UNION ALL
 
@@ -19,7 +19,7 @@ SELECT
     total_incl_tax, 
     partition_0
 FROM 
-    "fulldataauroratos3"."learning_order_totals"
+    "auroratos3exporttest"."learning_order_totals"
 
 UNION ALL
 
@@ -31,4 +31,4 @@ SELECT
     total_incl_tax, 
     partition_0
 FROM 
-    "fulldataauroratos3"."azama_order_totals";
+    "auroratos3exporttest"."azama_order_totals";

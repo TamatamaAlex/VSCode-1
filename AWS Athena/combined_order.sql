@@ -1,5 +1,6 @@
 CREATE TABLE "combinedtables"."combined_order" AS
 SELECT 
+    'ota' AS source,
     order_id,
     order_code,
     customer_id,
@@ -50,11 +51,12 @@ SELECT
     customer_custom3,
     partition_0
 FROM 
-    "fulldataauroratos3"."ota_order"
+    "auroratos3exporttest"."ota_order"
 
 UNION ALL
 
 SELECT 
+    'learning' AS source,
     order_id,
     order_code,
     customer_id,
@@ -105,11 +107,12 @@ SELECT
     customer_custom3,
     partition_0
 FROM 
-    "fulldataauroratos3"."learning_order"
+    "auroratos3exporttest"."learning_order"
 
 UNION ALL
 
 SELECT 
+    'azama' AS source,
     order_id,
     order_code,
     customer_id,
@@ -160,4 +163,4 @@ SELECT
     customer_custom3,
     partition_0
 FROM 
-    "fulldataauroratos3"."azama_order";
+    "auroratos3exporttest"."azama_order";

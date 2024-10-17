@@ -1,5 +1,6 @@
 CREATE TABLE "combinedtables"."combined_order_products" AS
 SELECT 
+    'ota' AS source,
     order_pro_id,
     order_id,
     order_logistics_id,
@@ -28,11 +29,12 @@ SELECT
     pro_custom3,
     partition_0
 FROM 
-    "fulldataauroratos3"."ota_order_products"
+    "auroratos3exporttest"."ota_order_products"
 
 UNION ALL
 
 SELECT 
+    'learning' AS source,
     order_pro_id,
     order_id,
     order_logistics_id,
@@ -61,11 +63,12 @@ SELECT
     pro_custom3,
     partition_0
 FROM 
-    "fulldataauroratos3"."learning_order_products"
+    "auroratos3exporttest"."learning_order_products"
 
 UNION ALL
 
 SELECT 
+    'azama' AS source,
     order_pro_id,
     order_id,
     order_logistics_id,
@@ -94,4 +97,4 @@ SELECT
     pro_custom3,
     partition_0
 FROM 
-    "fulldataauroratos3"."azama_order_products";
+    "auroratos3exporttest"."azama_order_products";
