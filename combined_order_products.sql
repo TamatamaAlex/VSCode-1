@@ -1,0 +1,97 @@
+CREATE TABLE "combinedtables"."combined_order_products" AS
+SELECT 
+    order_pro_id,
+    order_id,
+    order_logistics_id,
+    product_id,
+    main_no,
+    product_no,
+    jan_code,
+    location_no,
+    product_name,
+    set_id,
+    set_name,
+    unit_price,
+    set_quantity,
+    set_unit,
+    order_pro_count,
+    tax_rate,
+    tax_type_id,
+    tax_incl,
+    item_type,
+    shipping_size,
+    set_custom1,
+    set_custom2,
+    set_custom3,
+    pro_custom1,
+    pro_custom2,
+    pro_custom3,
+    partition_0
+FROM 
+    "fulldataauroratos3"."ota_order_products"
+
+UNION ALL
+
+SELECT 
+    order_pro_id,
+    order_id,
+    order_logistics_id,
+    product_id,
+    main_no,
+    product_no,
+    jan_code,
+    location_no,
+    product_name,
+    set_id,
+    set_name,
+    unit_price,
+    set_quantity,
+    set_unit,
+    order_pro_count,
+    tax_rate,
+    tax_type_id,
+    tax_incl,
+    item_type,
+    shipping_size,
+    set_custom1,
+    set_custom2,
+    set_custom3,
+    pro_custom1,
+    pro_custom2,
+    pro_custom3,
+    partition_0
+FROM 
+    "fulldataauroratos3"."learning_order_products"
+
+UNION ALL
+
+SELECT 
+    order_pro_id,
+    order_id,
+    order_logistics_id,
+    product_id,
+    main_no,
+    product_no,
+    jan_code,
+    location_no,
+    product_name,
+    set_id,
+    set_name,
+    unit_price,
+    set_quantity,
+    set_unit,
+    order_pro_count,
+    tax_rate,
+    tax_type_id,
+    tax_incl,
+    item_type,
+    shipping_size,
+    set_custom1,
+    set_custom2,
+    set_custom3,
+    pro_custom1,
+    pro_custom2,
+    pro_custom3,
+    partition_0
+FROM 
+    "fulldataauroratos3"."azama_order_products";
