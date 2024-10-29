@@ -1,4 +1,4 @@
-#2024-10-18 Alex Day Transformed PHP serialized data to JSON format, skipping non-PHP serialized data
+#2024-10-18 Alex Day Transformed PHP serialized data to JSON format, skipping non-PHP serialized data.
 import sys
 import boto3
 import json
