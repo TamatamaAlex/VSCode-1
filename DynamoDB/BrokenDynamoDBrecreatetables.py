@@ -175,22 +175,11 @@ def import_s3_to_dynamodb(target_table_name, target_bucket_name):
 
 # List of source table names
 source_table_names = [
-    "app_actions_test", "app_user_widget_configs_test", "app_widgets_test", "apps_test",
-    "auth_account_info_test", "auth_appsync_tokens_test", "auth_roles_test", "auth_users_test",
-    "billing_configs_test", "billing_customers_test", "billing_plans_test", "billing_subscriptions_test",
-    "billing_transactions_test", "call_center_phone_calls_relations_test", "customer_portal_carts_test",
-    "customer_portal_subscription_items_test", "director_configs_test", "director_data_map_test",
-    "director_jobs_test", "director_pending_state_machines_test", "director_triggers_test",
-    "document_templates_test", "event_store_test", "mice_categories_test", "mice_events_test",
-    "mice_relations_test", "notes_test", "notification_dispatch_configs_test",
-    "notification_email_relations_test", "notification_emails_test", "notification_events_test",
-    "notification_object_followers_test", "notification_subscriptions_test", "opportunities_test",
-    "opportunity_contacts_test", "opportunity_lead_stages_test", "opportunity_leads_test",
-    "opportunity_profiling_entries_test", "opportunity_profiling_templates_test", "opportunity_stages_test"
+    "list all table names here"
 ]
 
-source_bucket_name = 'exporttobruudev'
-target_bucket_name = 'bruu-root-to-bruu-dev-dynamodb-tables'
+source_bucket_name = 'bucket name here'
+target_bucket_name = 'bucket name here'
 
 # Iterate over each table and perform export, copy, and import
 for table_name in source_table_names:
