@@ -39,7 +39,7 @@ for df in dynamic_frames[1:]:
     combined_dynamic_frame = combined_dynamic_frame.union(df)
 
 # Write the combined data to S3 in Parquet format
-output_path = "s3://gluejobtestbucketparquet/"
+output_path = "s3://s3 bucket name here/"
 glueContext.write_dynamic_frame.from_options(
     frame=combined_dynamic_frame,
     connection_type="s3",
