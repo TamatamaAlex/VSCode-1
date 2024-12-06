@@ -31,7 +31,7 @@ SELECT
     pro_custom3,
     partition_0
 FROM 
-    "auroratos3exporttest"."ota_order_products" --insert your own DB and table name here
+    "auroratos3exporttest"."order_products" --insert your own DB and table name here
 
 UNION ALL --this is the SQL command to combine the data from the other tables
 

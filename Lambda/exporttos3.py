@@ -1,3 +1,4 @@
+#Exports an Amazon Aurora MySQL DB cluster to an Amazon S3 bucket...?
 import boto3
 import os
 
@@ -5,7 +6,7 @@ def lambda_handler(event, context):
     rds_client = boto3.client('rds')
     
     # Parameters
-    db_identifier = os.environ['bcart-develop']
+    db_identifier = os.environ['databasename']
     s3_bucket_name = os.environ['auroratos3autoexport']
     iam_role_arn = os.environ['IAM_ROLE_ARN']
     export_task_identifier = f"export-task-{db_identifier}"

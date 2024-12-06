@@ -28,7 +28,7 @@ FROM
 UNION ALL
 
 SELECT
-    'azama' AS source,
+    'order' AS source,
     order_id, 
     tax_rate, 
     total, 
@@ -36,4 +36,4 @@ SELECT
     total_incl_tax, 
     partition_0
 FROM 
-    "auroratos3exporttest"."azama_order_totals"; --insert your own DB and table name here
+    "auroratos3exporttest"."order_totals"; --insert your own DB and table name here

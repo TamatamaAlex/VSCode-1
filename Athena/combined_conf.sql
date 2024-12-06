@@ -11,7 +11,7 @@ SELECT
     memo,
     partition_0
 FROM 
-    "auroratos3exporttest"."ota_conf" --insert your own DB and table name here
+    "table"."conf" --insert your own DB and table name here
 
 UNION ALL --this is the SQL command to combine the data from the other tables
 
@@ -25,12 +25,12 @@ SELECT
     memo,
     partition_0
 FROM 
-    "auroratos3exporttest"."learning_conf" --insert your own DB and table name here
+    "table"."conf" --insert your own DB and table name here
 
 UNION ALL
 
 SELECT 
-    'azama' AS source,
+    'table' AS source,
     id, 
     name, 
     value, 
@@ -39,4 +39,4 @@ SELECT
     memo,
     partition_0
 FROM 
-    "auroratos3exporttest"."azama_conf"; --insert your own DB and table name here
+    "table"."conf"; --insert your own DB and table name here

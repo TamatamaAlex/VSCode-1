@@ -1,3 +1,5 @@
+#This combines glue database tables into a combined table based on the suffix of the table name. 
+#Working
 import boto3
 import logging
 from pyspark.context import SparkContext
