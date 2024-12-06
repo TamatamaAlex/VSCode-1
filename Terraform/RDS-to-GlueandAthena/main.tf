@@ -64,7 +64,7 @@ resource "aws_glue_job" "combine-job" {
 }
 
 resource "aws_glue_workflow" "Bcart-workflow" {
-  name = "Bcart-combinetables-workflow""
+  name = "Bcart-combinetables-workflow"
 }
 
 resource "aws_glue_trigger" "start-workflow" {
